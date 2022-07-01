@@ -1,0 +1,17 @@
+<% include partials/header.ejs %>
+
+<form action="/register" method="post">
+  <h1>Register</h1>
+  <input type="text" name="firstName" placeholder="Enter first Name" />
+  <input type="text" name="lastName" placeholder="Enter last Name" />
+  <input type="email" name="email" placeholder="Enter your email" />
+  <input type="password" name="password" placeholder="Enter password" />
+  <input type="text" name="city" placeholder="Enter City" />
+  <button>Submit Details</button>
+</form>
+<p>Have An Account? <a class="btn" href="/register/login">Login</a></p>
+<p class="reg">
+  Sign Up using: <a class="btn" href="/register/google">Google</a
+  ><a class="btn" href="/register/auth/github">GitHub</a>
+</p>
+<% include partials/footer.ejs %>
