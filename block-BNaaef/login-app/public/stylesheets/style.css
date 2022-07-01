@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+  background: linear-gradient(to right, rgb(173, 205, 218), rgb(162, 115, 196));
+  background-size: cover;
+  text-align: center;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+.center {
+  text-align: center;
+}
+.center .btn {
+  height: 2rem;
+}
+.container {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-30 {
+  flex: 1 1 30%;
+  margin: 0.5rem;
+}
+
+.flex-60 {
+  flex: 1 1 60%;
+  margin: 0.5rem;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-start {
+  align-items: flex-start;
+}
+
+.article {
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: left;
+  background-color: rgb(224, 222, 226);
+  /* border-radius: 1rem; */
+}
+
+header {
+  background-color: rgb(8, 139, 247);
+  padding: 1rem;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  height: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0.3rem;
+  background-color: crimson;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(34, 34, 100);
+  text-shadow: 4px 6px 12px black;
+}
+.edit {
+  background-color: rgb(86, 165, 86);
+  color: black;
+}
+
+.edit:hover {
+  background-color: green;
+  color: white;
+}
+
+.delete,
+.comment-sub {
+  background-color: red;
+  color: black;
+}
+
+.delete:hover,
+button:hover {
+  background-color: orangered;
+  color: white;
+  box-shadow: 4px 4px 8px black;
+}
+
+button {
+  border: none;
+  padding: 0.3rem 0.6rem;
+  background-color: steelblue;
+  color: white;
+  margin-top: 0.8rem;
+  border: 2px solid black;
+}
+
+form {
+  width: 350px;
+  border: 1px solid black;
+  padding: 0.8rem;
+  margin: 2rem auto;
+  background-color: blanchedalmond;
+  box-shadow: 4px 4px 8px black;
+  background: linear-gradient(to right, rgb(41, 155, 108), rgb(142, 86, 182));
+}
+
+input,
+textarea {
+  padding: 0.3rem;
+  margin: 0.5rem;
+  width: 80%;
+  outline: none;
+}
+
+.red {
+  color: red;
+  font-size: 400;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(116, 48, 116);
+  text-shadow: 0px 2px 6px rgb(219, 199, 199);
+}
+
+.article,
+.btn:hover,
+.comment-sub:hover {
+  box-shadow: 4px 4px 8px black;
+}
+.reg {
+  margin-top: 2rem;
+}
