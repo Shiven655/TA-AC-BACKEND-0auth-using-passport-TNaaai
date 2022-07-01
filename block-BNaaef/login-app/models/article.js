@@ -1,0 +1,25 @@
+var mongoose = require('mongoose');
+var bcrypt = require('bcrypt');
+var comment = require('./comment');
+
+let articleSchema = new Schema(
+  {
+    title: String,
+    description: String,
+    likes: { type: Number, default: 0 },
+    comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+    author: String,
+    slug: String,
+  },
+  { timestamps: true }
+);
+
+articleSchema.pre('save', function (next) {
+  this.slug = this.title;
+  this.slug = this.slug.toLowerCase().split().join('-');
+  next();
+});
+
+let Article = mongoose.model('Article', articleSchema);
+
+module.exports = Article;
